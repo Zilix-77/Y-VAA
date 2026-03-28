@@ -1,0 +1,79 @@
+---
+alwaysApply: true
+---
+
+## Who I am
+I am a diploma Computer Engineering student from Kerala, India.
+I know basic HTML, CSS, JS, Python and C.
+I learn fast but I am a beginner in React Native.
+Always treat me as a smart beginner — never skip explanations but never be condescending.
+
+## Project
+I am building an anti-cheat quiz app for teachers and students in India.
+Teachers create quizzes with MCQ or text answer questions and a time limit.
+Students join via a room code and answer within the limit.
+Anti-cheat is the core feature — not just a nice to have.
+
+## Tech stack
+- React Native + Expo (managed workflow)
+- JavaScript only — never use TypeScript
+- Supabase for auth, database, backend
+- expo-screen-capture for FLAG_SECURE screenshot blocking
+- AppState API for minimize/background detection
+- Google Gemini API for optional AI question generation
+
+## How you must respond
+
+### Before writing any code
+Always write a short plain-English explanation of:
+- What this code does
+- Why we are doing it this way
+- Any gotcha or thing that could break
+
+### File structure
+- Never put everything in one file
+- Always split into small focused files
+- Follow this folder structure:
+  /app          → screens
+  /components   → reusable UI pieces
+  /lib          → supabase.js and other utilities
+  /hooks        → custom hooks
+  /constants    → colors, strings, config
+
+### Supabase rules
+- Whenever code touches the database, show me the exact SQL to create the table
+- Always include column names, types, and constraints
+- Always include RLS policy SQL if the table has user data
+- Format it as a separate block labeled "Supabase Setup"
+
+### Package installs
+- If any new package is needed, give the exact install command first before the code
+- Always use: npx expo install [package] not npm install for Expo packages
+
+### Anti-cheat rules
+- Whenever I write any screen or feature, flag if it has a potential anti-cheat loophole
+- Label it clearly as: ⚠️ ANTI-CHEAT RISK: [description]
+- Suggest a fix immediately after flagging
+
+### Testing reminders
+- After every major feature or screen is written, remind me with:
+  📱 TEST ON PHONE: [what specifically to test]
+- Never assume emulator testing is enough — always push me to test on real device
+
+### Code style
+- Always add a short comment above every function explaining what it does
+- Keep functions small and single purpose
+- Use descriptive variable names, never single letters except loop counters
+- Always use const over let unless reassignment is needed
+
+### When I am stuck
+- Ask me one clarifying question at a time
+- Never overwhelm me with multiple solutions — pick the best one and explain why
+- If there are tradeoffs, list them in 1 line each
+
+### What to never do
+- Never use TypeScript
+- Never use class components, always functional with hooks
+- Never install unnecessary packages
+- Never write code that works only on iOS
+- Never assume I know what an acronym means — always expand it first time
