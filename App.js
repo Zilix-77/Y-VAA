@@ -1,6 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { HomeScreen } from './app/HomeScreen';
+import { MainNavigator } from './navigation/MainNavigator';
 import { LoadingScreen } from './app/LoadingScreen';
 import { MissingConfigScreen } from './app/MissingConfigScreen';
 import { ScreenContainer } from './components/ScreenContainer';
@@ -37,7 +37,7 @@ export default function App() {
     <NavigationContainer>
       <ScreenContainer>
         {session ? (
-          <HomeScreen profile={profile} session={session} onSignOut={signOut} />
+          <MainNavigator profile={profile} session={session} onSignOut={signOut} />
         ) : (
           <AuthNavigator />
         )}
