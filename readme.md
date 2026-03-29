@@ -69,8 +69,8 @@ Vaa is a lightweight, free quiz platform where:
 
 ## Project Status
 
-- [ ] Phase 1 — Setup
-- [ ] Phase 2 — Auth screens
+- [x] Phase 1 — Setup
+- [x] Phase 2 — Auth screens
 - [ ] Phase 3 — Core quiz flow
 - [ ] Phase 4 — Anti-cheat implementation
 - [ ] Phase 5 — Teacher dashboard + results
