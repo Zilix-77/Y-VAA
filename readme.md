@@ -63,7 +63,6 @@ Vaa is a lightweight, free quiz platform where:
 - **Supabase** — auth, database, backend
 - **expo-screen-capture** — FLAG_SECURE screenshot blocking
 - **AppState API** — minimize and background detection
-- **Google Gemini API** — optional AI question generation
 
 ---
 
